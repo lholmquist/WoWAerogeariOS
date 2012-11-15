@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83569B321655898A00B63B76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B311655898A00B63B76 /* UIKit.framework */; };
+		83569B341655898A00B63B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B331655898A00B63B76 /* Foundation.framework */; };
+		83569B361655898A00B63B76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B351655898A00B63B76 /* CoreGraphics.framework */; };
+		83569B3C1655898A00B63B76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83569B3A1655898A00B63B76 /* InfoPlist.strings */; };
+		83569B3E1655898A00B63B76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83569B3D1655898A00B63B76 /* main.m */; };
+		83569B421655898A00B63B76 /* LPHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83569B411655898A00B63B76 /* LPHAppDelegate.m */; };
+		83569B441655898A00B63B76 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83569B431655898A00B63B76 /* Default.png */; };
+		83569B461655898A00B63B76 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83569B451655898A00B63B76 /* Default@2x.png */; };
+		83569B481655898A00B63B76 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83569B471655898A00B63B76 /* Default-568h@2x.png */; };
+		83569B4B1655898A00B63B76 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83569B491655898A00B63B76 /* MainStoryboard.storyboard */; };
+		83569B4E1655898A00B63B76 /* LPHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83569B4D1655898A00B63B76 /* LPHViewController.m */; };
+		83569B561655898A00B63B76 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B551655898A00B63B76 /* SenTestingKit.framework */; };
+		83569B571655898A00B63B76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B311655898A00B63B76 /* UIKit.framework */; };
+		83569B581655898A00B63B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B331655898A00B63B76 /* Foundation.framework */; };
+		83569B601655898A00B63B76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83569B5E1655898A00B63B76 /* InfoPlist.strings */; };
+		83569B631655898A00B63B76 /* WoWAerogearIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83569B621655898A00B63B76 /* WoWAerogearIOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83569B591655898A00B63B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83569B241655898A00B63B76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83569B2C1655898A00B63B76;
+			remoteInfo = WoWAerogearIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83569B2D1655898A00B63B76 /* WoWAerogearIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWAerogearIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83569B311655898A00B63B76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83569B331655898A00B63B76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83569B351655898A00B63B76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83569B391655898A00B63B76 /* WoWAerogearIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoWAerogearIOS-Info.plist"; sourceTree = "<group>"; };
+		83569B3B1655898A00B63B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83569B3D1655898A00B63B76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83569B3F1655898A00B63B76 /* WoWAerogearIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WoWAerogearIOS-Prefix.pch"; sourceTree = "<group>"; };
+		83569B401655898A00B63B76 /* LPHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHAppDelegate.h; sourceTree = "<group>"; };
+		83569B411655898A00B63B76 /* LPHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHAppDelegate.m; sourceTree = "<group>"; };
+		83569B431655898A00B63B76 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		83569B451655898A00B63B76 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		83569B471655898A00B63B76 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		83569B4A1655898A00B63B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		83569B4C1655898A00B63B76 /* LPHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPHViewController.h; sourceTree = "<group>"; };
+		83569B4D1655898A00B63B76 /* LPHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPHViewController.m; sourceTree = "<group>"; };
+		83569B541655898A00B63B76 /* WoWAerogearIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoWAerogearIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83569B551655898A00B63B76 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		83569B5D1655898A00B63B76 /* WoWAerogearIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoWAerogearIOSTests-Info.plist"; sourceTree = "<group>"; };
+		83569B5F1655898A00B63B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83569B611655898A00B63B76 /* WoWAerogearIOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoWAerogearIOSTests.h; sourceTree = "<group>"; };
+		83569B621655898A00B63B76 /* WoWAerogearIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoWAerogearIOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83569B2A1655898A00B63B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B321655898A00B63B76 /* UIKit.framework in Frameworks */,
+				83569B341655898A00B63B76 /* Foundation.framework in Frameworks */,
+				83569B361655898A00B63B76 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83569B501655898A00B63B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B561655898A00B63B76 /* SenTestingKit.framework in Frameworks */,
+				83569B571655898A00B63B76 /* UIKit.framework in Frameworks */,
+				83569B581655898A00B63B76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83569B221655898A00B63B76 = {
+			isa = PBXGroup;
+			children = (
+				83569B371655898A00B63B76 /* WoWAerogearIOS */,
+				83569B5B1655898A00B63B76 /* WoWAerogearIOSTests */,
+				83569B301655898A00B63B76 /* Frameworks */,
+				83569B2E1655898A00B63B76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83569B2E1655898A00B63B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83569B2D1655898A00B63B76 /* WoWAerogearIOS.app */,
+				83569B541655898A00B63B76 /* WoWAerogearIOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83569B301655898A00B63B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83569B311655898A00B63B76 /* UIKit.framework */,
+				83569B331655898A00B63B76 /* Foundation.framework */,
+				83569B351655898A00B63B76 /* CoreGraphics.framework */,
+				83569B551655898A00B63B76 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83569B371655898A00B63B76 /* WoWAerogearIOS */ = {
+			isa = PBXGroup;
+			children = (
+				83569B401655898A00B63B76 /* LPHAppDelegate.h */,
+				83569B411655898A00B63B76 /* LPHAppDelegate.m */,
+				83569B491655898A00B63B76 /* MainStoryboard.storyboard */,
+				83569B4C1655898A00B63B76 /* LPHViewController.h */,
+				83569B4D1655898A00B63B76 /* LPHViewController.m */,
+				83569B381655898A00B63B76 /* Supporting Files */,
+			);
+			path = WoWAerogearIOS;
+			sourceTree = "<group>";
+		};
+		83569B381655898A00B63B76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83569B391655898A00B63B76 /* WoWAerogearIOS-Info.plist */,
+				83569B3A1655898A00B63B76 /* InfoPlist.strings */,
+				83569B3D1655898A00B63B76 /* main.m */,
+				83569B3F1655898A00B63B76 /* WoWAerogearIOS-Prefix.pch */,
+				83569B431655898A00B63B76 /* Default.png */,
+				83569B451655898A00B63B76 /* Default@2x.png */,
+				83569B471655898A00B63B76 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83569B5B1655898A00B63B76 /* WoWAerogearIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				83569B611655898A00B63B76 /* WoWAerogearIOSTests.h */,
+				83569B621655898A00B63B76 /* WoWAerogearIOSTests.m */,
+				83569B5C1655898A00B63B76 /* Supporting Files */,
+			);
+			path = WoWAerogearIOSTests;
+			sourceTree = "<group>";
+		};
+		83569B5C1655898A00B63B76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83569B5D1655898A00B63B76 /* WoWAerogearIOSTests-Info.plist */,
+				83569B5E1655898A00B63B76 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83569B2C1655898A00B63B76 /* WoWAerogearIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83569B661655898A00B63B76 /* Build configuration list for PBXNativeTarget "WoWAerogearIOS" */;
+			buildPhases = (
+				83569B291655898A00B63B76 /* Sources */,
+				83569B2A1655898A00B63B76 /* Frameworks */,
+				83569B2B1655898A00B63B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoWAerogearIOS;
+			productName = WoWAerogearIOS;
+			productReference = 83569B2D1655898A00B63B76 /* WoWAerogearIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83569B531655898A00B63B76 /* WoWAerogearIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83569B691655898A00B63B76 /* Build configuration list for PBXNativeTarget "WoWAerogearIOSTests" */;
+			buildPhases = (
+				83569B4F1655898A00B63B76 /* Sources */,
+				83569B501655898A00B63B76 /* Frameworks */,
+				83569B511655898A00B63B76 /* Resources */,
+				83569B521655898A00B63B76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83569B5A1655898A00B63B76 /* PBXTargetDependency */,
+			);
+			name = WoWAerogearIOSTests;
+			productName = WoWAerogearIOSTests;
+			productReference = 83569B541655898A00B63B76 /* WoWAerogearIOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83569B241655898A00B63B76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LPH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Lucas Holmquist";
+			};
+			buildConfigurationList = 83569B271655898A00B63B76 /* Build configuration list for PBXProject "WoWAerogearIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83569B221655898A00B63B76;
+			productRefGroup = 83569B2E1655898A00B63B76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83569B2C1655898A00B63B76 /* WoWAerogearIOS */,
+				83569B531655898A00B63B76 /* WoWAerogearIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83569B2B1655898A00B63B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B3C1655898A00B63B76 /* InfoPlist.strings in Resources */,
+				83569B441655898A00B63B76 /* Default.png in Resources */,
+				83569B461655898A00B63B76 /* Default@2x.png in Resources */,
+				83569B481655898A00B63B76 /* Default-568h@2x.png in Resources */,
+				83569B4B1655898A00B63B76 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83569B511655898A00B63B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B601655898A00B63B76 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83569B521655898A00B63B76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83569B291655898A00B63B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B3E1655898A00B63B76 /* main.m in Sources */,
+				83569B421655898A00B63B76 /* LPHAppDelegate.m in Sources */,
+				83569B4E1655898A00B63B76 /* LPHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83569B4F1655898A00B63B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83569B631655898A00B63B76 /* WoWAerogearIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83569B5A1655898A00B63B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83569B2C1655898A00B63B76 /* WoWAerogearIOS */;
+			targetProxy = 83569B591655898A00B63B76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83569B3A1655898A00B63B76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83569B3B1655898A00B63B76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83569B491655898A00B63B76 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83569B4A1655898A00B63B76 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		83569B5E1655898A00B63B76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83569B5F1655898A00B63B76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83569B641655898A00B63B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83569B651655898A00B63B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83569B671655898A00B63B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
+				INFOPLIST_FILE = "WoWAerogearIOS/WoWAerogearIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83569B681655898A00B63B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
+				INFOPLIST_FILE = "WoWAerogearIOS/WoWAerogearIOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		83569B6A1655898A00B63B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WoWAerogearIOS.app/WoWAerogearIOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
+				INFOPLIST_FILE = "WoWAerogearIOSTests/WoWAerogearIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		83569B6B1655898A00B63B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WoWAerogearIOS.app/WoWAerogearIOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
+				INFOPLIST_FILE = "WoWAerogearIOSTests/WoWAerogearIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83569B271655898A00B63B76 /* Build configuration list for PBXProject "WoWAerogearIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83569B641655898A00B63B76 /* Debug */,
+				83569B651655898A00B63B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83569B661655898A00B63B76 /* Build configuration list for PBXNativeTarget "WoWAerogearIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83569B671655898A00B63B76 /* Debug */,
+				83569B681655898A00B63B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83569B691655898A00B63B76 /* Build configuration list for PBXNativeTarget "WoWAerogearIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83569B6A1655898A00B63B76 /* Debug */,
+				83569B6B1655898A00B63B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83569B241655898A00B63B76 /* Project object */;
+}
