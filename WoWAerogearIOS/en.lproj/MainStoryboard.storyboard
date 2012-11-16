@@ -1,23 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3006" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="W0R-Eu-QN5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller - Realms-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="LPHViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="62T-Yg-Fms">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RealmCell" id="EO3-ge-Lt0">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="6OS-K4-F9R" kind="push" identifier="showRealmDetail" id="rd5-Ft-SlK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="y4J-Nh-S0s"/>
+                                    <outlet property="delegate" destination="2" id="fTu-8t-cwc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="62T-Yg-Fms" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="20g-S6-DAo"/>
+                            <constraint firstItem="62T-Yg-Fms" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Pfc-9X-WIw"/>
+                            <constraint firstItem="62T-Yg-Fms" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="buq-uJ-2Ot"/>
+                            <constraint firstItem="62T-Yg-Fms" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="q2q-zG-5Wj"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Realms" id="vw9-vR-XGp"/>
+                    <connections>
+                        <outlet property="realmTableView" destination="62T-Yg-Fms" id="cZa-Yv-NRz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="104" y="17"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="oeo-QV-rdr">
+            <objects>
+                <viewController id="6OS-K4-F9R" customClass="LPHDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6d2-B1-GM6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-Sz-gLU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AxG-Sz-gLU" firstAttribute="top" secondItem="6d2-B1-GM6" secondAttribute="top" constant="263" id="aPx-Ug-D5T"/>
+                            <constraint firstItem="AxG-Sz-gLU" firstAttribute="leading" secondItem="6d2-B1-GM6" secondAttribute="leading" constant="120" id="yM4-7s-LRa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PfF-Ir-l8f"/>
+                    <connections>
+                        <outlet property="realmLabel" destination="AxG-Sz-gLU" id="AVp-TJ-zs5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIP-q5-SSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gxp-US-I1d">
+            <objects>
+                <navigationController id="W0R-Eu-QN5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X52-KT-aDt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="WCh-TU-llD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjR-MI-6xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-299" y="17"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="LPHDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="realmLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LPHViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="realmTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55F9D943F441479BBFD029E4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 793384ECA57F48AE9D1FEA4A /* libPods.a */; };
 		83569B321655898A00B63B76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B311655898A00B63B76 /* UIKit.framework */; };
 		83569B341655898A00B63B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B331655898A00B63B76 /* Foundation.framework */; };
 		83569B361655898A00B63B76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B351655898A00B63B76 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 		83569B581655898A00B63B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83569B331655898A00B63B76 /* Foundation.framework */; };
 		83569B601655898A00B63B76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83569B5E1655898A00B63B76 /* InfoPlist.strings */; };
 		83569B631655898A00B63B76 /* WoWAerogearIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83569B621655898A00B63B76 /* WoWAerogearIOSTests.m */; };
+		83CF6F6016558D9E00A87D62 /* LPHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF6F5F16558D9E00A87D62 /* LPHDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		793384ECA57F48AE9D1FEA4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		83569B2D1655898A00B63B76 /* WoWAerogearIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWAerogearIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83569B311655898A00B63B76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		83569B331655898A00B63B76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		83569B351655898A00B63B76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83569B311655898A00B63B76 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83569B331655898A00B63B76 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83569B351655898A00B63B76 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		83569B391655898A00B63B76 /* WoWAerogearIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WoWAerogearIOS-Info.plist"; sourceTree = "<group>"; };
 		83569B3B1655898A00B63B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83569B3D1655898A00B63B76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		83569B5F1655898A00B63B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83569B611655898A00B63B76 /* WoWAerogearIOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WoWAerogearIOSTests.h; sourceTree = "<group>"; };
 		83569B621655898A00B63B76 /* WoWAerogearIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoWAerogearIOSTests.m; sourceTree = "<group>"; };
+		83CF6F5E16558D9E00A87D62 /* LPHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPHDetailViewController.h; sourceTree = "<group>"; };
+		83CF6F5F16558D9E00A87D62 /* LPHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPHDetailViewController.m; sourceTree = "<group>"; };
+		A8DEB8F22CDA4E5DA28B2C13 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				83569B321655898A00B63B76 /* UIKit.framework in Frameworks */,
 				83569B341655898A00B63B76 /* Foundation.framework in Frameworks */,
 				83569B361655898A00B63B76 /* CoreGraphics.framework in Frameworks */,
+				55F9D943F441479BBFD029E4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,7 @@
 				83569B5B1655898A00B63B76 /* WoWAerogearIOSTests */,
 				83569B301655898A00B63B76 /* Frameworks */,
 				83569B2E1655898A00B63B76 /* Products */,
+				A8DEB8F22CDA4E5DA28B2C13 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +118,7 @@
 				83569B331655898A00B63B76 /* Foundation.framework */,
 				83569B351655898A00B63B76 /* CoreGraphics.framework */,
 				83569B551655898A00B63B76 /* SenTestingKit.framework */,
+				793384ECA57F48AE9D1FEA4A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +128,8 @@
 			children = (
 				83569B401655898A00B63B76 /* LPHAppDelegate.h */,
 				83569B411655898A00B63B76 /* LPHAppDelegate.m */,
+				83CF6F5F16558D9E00A87D62 /* LPHDetailViewController.m */,
+				83CF6F5E16558D9E00A87D62 /* LPHDetailViewController.h */,
 				83569B491655898A00B63B76 /* MainStoryboard.storyboard */,
 				83569B4C1655898A00B63B76 /* LPHViewController.h */,
 				83569B4D1655898A00B63B76 /* LPHViewController.m */,
@@ -170,6 +181,7 @@
 				83569B291655898A00B63B76 /* Sources */,
 				83569B2A1655898A00B63B76 /* Frameworks */,
 				83569B2B1655898A00B63B76 /* Resources */,
+				108B091967EF448D85E3EFBA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +263,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		108B091967EF448D85E3EFBA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		83569B521655898A00B63B76 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +300,7 @@
 				83569B3E1655898A00B63B76 /* main.m in Sources */,
 				83569B421655898A00B63B76 /* LPHAppDelegate.m in Sources */,
 				83569B4E1655898A00B63B76 /* LPHViewController.m in Sources */,
+				83CF6F6016558D9E00A87D62 /* LPHDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +402,7 @@
 		};
 		83569B671655898A00B63B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DEB8F22CDA4E5DA28B2C13 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
@@ -386,6 +414,7 @@
 		};
 		83569B681655898A00B63B76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DEB8F22CDA4E5DA28B2C13 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WoWAerogearIOS/WoWAerogearIOS-Prefix.pch";
@@ -448,6 +477,7 @@
 				83569B681655898A00B63B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83569B691655898A00B63B76 /* Build configuration list for PBXNativeTarget "WoWAerogearIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +486,7 @@
 				83569B6B1655898A00B63B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,14 @@
+
+DEPENDENCIES: 
+- AeroGear (= 1.0.0.M1.20121115)
+
+COCOAPODS: 0.15.1
+
+PODS: 
+- AFNetworking (1.0RC1)
+- AeroGear (1.0.0.M1.20121115): 
+  - AFNetworking (= 1.0RC1)
+
+SPEC CHECKSUMS: 
+  AeroGear: 61c0c46e3078708fca6ecb3931fc34b00e872c3d
+  AFNetworking: b21c1252d437fd322e7db1caa93b163d76a362cb

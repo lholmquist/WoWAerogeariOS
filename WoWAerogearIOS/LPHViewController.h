@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LPHViewController : UIViewController
+@interface LPHViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property IBOutlet UITableView *realmTableView;
 
 @end
