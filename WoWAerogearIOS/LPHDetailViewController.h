@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LPHDetailViewController : UIViewController
+@interface LPHDetailViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property IBOutlet UILabel *realmLabel;
-@property NSString *realmName;
 @property id realm;
+@property IBOutlet UITableView *realmDetailView;
 
 @end

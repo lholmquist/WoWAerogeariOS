@@ -10,5 +10,19 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[LPHDetailViewController viewDidLoad]:LPHDetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LPHDetailViewController tableView:cellForRowAtIndexPath:]:LPHDetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.textLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "key != &quot;@status&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

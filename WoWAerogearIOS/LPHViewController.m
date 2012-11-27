@@ -59,6 +59,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *simpleTableIdentifier = @"RealmCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -80,8 +81,7 @@
         LPHDetailViewController *destViewController = segue.destinationViewController;
         
         NSUInteger row = [indexPath row];
-        destViewController.realm = [_realms objectAtIndex:row];
-        destViewController.realmName = [[_realms objectAtIndex:row] objectForKey:@"name"];
+        destViewController.realm = [_realms objectAtIndex:row]; //passing the realm to the detail view
     }
 }
 

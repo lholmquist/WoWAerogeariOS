@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="104" y="17"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail View Controller - Realm Detail-->
         <scene sceneID="oeo-QV-rdr">
             <objects>
                 <viewController id="6OS-K4-F9R" customClass="LPHDetailViewController" sceneMemberID="viewController">
@@ -59,26 +59,74 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-Sz-gLU">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Lx8-ue-KxY">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PvPDetailCell" id="970-YZ-UQO">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="y9C-pV-lMw" kind="push" identifier="pvpSegue" trigger="accessoryAction" id="3Tc-IU-FgE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6OS-K4-F9R" id="bBh-cg-nf0"/>
+                                    <outlet property="delegate" destination="6OS-K4-F9R" id="uwg-IU-fBK"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AxG-Sz-gLU" firstAttribute="top" secondItem="6d2-B1-GM6" secondAttribute="top" constant="263" id="aPx-Ug-D5T"/>
-                            <constraint firstItem="AxG-Sz-gLU" firstAttribute="leading" secondItem="6d2-B1-GM6" secondAttribute="leading" constant="120" id="yM4-7s-LRa"/>
+                            <constraint firstItem="Lx8-ue-KxY" firstAttribute="trailing" secondItem="6d2-B1-GM6" secondAttribute="trailing" type="default" id="WBU-6N-afU"/>
+                            <constraint firstItem="Lx8-ue-KxY" firstAttribute="top" secondItem="6d2-B1-GM6" secondAttribute="top" type="default" id="ehX-qP-m0x"/>
+                            <constraint firstItem="Lx8-ue-KxY" firstAttribute="leading" secondItem="6d2-B1-GM6" secondAttribute="leading" type="default" id="n49-gI-vZs"/>
+                            <constraint firstItem="Lx8-ue-KxY" firstAttribute="bottom" secondItem="6d2-B1-GM6" secondAttribute="bottom" type="default" id="yys-Rv-NUH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PfF-Ir-l8f"/>
+                    <navigationItem key="navigationItem" title="Realm Detail" id="PfF-Ir-l8f"/>
                     <connections>
-                        <outlet property="realmLabel" destination="AxG-Sz-gLU" id="AVp-TJ-zs5"/>
+                        <outlet property="realmDetailView" destination="Lx8-ue-KxY" id="fzb-h4-V5n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIP-q5-SSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="26"/>
+            <point key="canvasLocation" x="537" y="17"/>
+        </scene>
+        <!--Detail View Controller - PvP Detail-->
+        <scene sceneID="EJ4-9m-9j2">
+            <objects>
+                <viewController id="y9C-pV-lMw" customClass="LPHPVPDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RQc-Zu-LRz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2j8-Eo-QlA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="y9C-pV-lMw" id="724-tx-kXk"/>
+                                    <outlet property="delegate" destination="y9C-pV-lMw" id="1qF-dp-ntZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2j8-Eo-QlA" firstAttribute="bottom" secondItem="RQc-Zu-LRz" secondAttribute="bottom" type="default" id="4Mo-sy-Pba"/>
+                            <constraint firstItem="2j8-Eo-QlA" firstAttribute="leading" secondItem="RQc-Zu-LRz" secondAttribute="leading" type="default" id="Iou-38-Yjt"/>
+                            <constraint firstItem="2j8-Eo-QlA" firstAttribute="top" secondItem="RQc-Zu-LRz" secondAttribute="top" type="default" id="JBD-db-Oxv"/>
+                            <constraint firstItem="2j8-Eo-QlA" firstAttribute="trailing" secondItem="RQc-Zu-LRz" secondAttribute="trailing" type="default" id="dpM-Zz-mDP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PvP Detail" id="JCL-JU-kr5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cy4-fO-Iye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gxp-US-I1d">
@@ -103,7 +151,13 @@
         <class className="LPHDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHDetailViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="realmLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="realmDetailView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="LPHPVPDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPHPVPDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pvpDetailViewController" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="LPHViewController" superclassName="UIViewController">
